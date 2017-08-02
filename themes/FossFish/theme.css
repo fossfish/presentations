@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2);
+
+@font-face {
+  font-family: TeutonNormal;
+  src: url("TeutonNormal.otf") format("opentype");
+}
+
+.slide {
+  background-image: url(logo_onwhite.png) !important;
+  background-repeat: no-repeat;
+  background-position: 92% 5%;
+  background-color: whitesmoke !important;
+  background-size: 20%;
+
+  font-family: "Exo 2", "Open Sans", sans-serif;
+  color: #1e428a !important;
+}
+  
+.slide a, .slide p.link {
+  color: #ff5f00 !important;
+  text-decoration: underline;
+}
+
+.slide_header {
+  border-bottom: 1px solid #ff5f00 !important;
+}
+
+.slide code {
+  background-color: white !important;
+  border: 1px solid #ff5f00;
+
+  font-family: "Exo 2", "Open Sans", sans-serif !important;
+  color: #1e428a !important;
+}
+
+.foss {
+  color: #1e428a;
+}
+
+.fish {
+  color: #ff5f00;
+}
+
