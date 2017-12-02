@@ -6,28 +6,25 @@
 
 ---
 
-# Our<span class="fish"> IoT World</span>
+# Our <span class="fish">IoT</span> World
 
 <br />
 <br />
 
-* IoT want to be pervasive, ubiquitous
+* IoT needs to be pervasive, ubiquitous
 * Adoption driven by feature and cost
-* Cheap hardware ! cheap software ?
+* Hardware is no longer the cost, it's software
 
 <br />
 <div style="text-align: center">
-How? Open Source Software !
+The Solution? Open Source Software!
 </div>
 
 ---
 
-# Open<span class="fish">Source</span>
+# A Complex <span class="fish">World</span>
 
 <br />
-<div style="text-align: center">
-Cheap ? No so fast !
-</div>
 
 * Compliance
 * Secure boot
@@ -42,75 +39,90 @@ Cheap ? No so fast !
 # Let's <span class="fish">Collaborate</span>
 
 <br />
+<br />
 
-* That is what infrastructure is for !
+* That is what infrastructure is for
 * Reuse Open Source components
-* Easy, upstream your patch and move fast...
-* Everyone does that just fine, right ?
+* Local changes, upstream your patch, move on...
+* It works well for everyone, right?
 
 ---
 
-
-# Is that your company <span class="fish">Job</span>  ?
+# Is That <span class="fish">Your</span> Job?
 
 ---
 
-# It is <span class="fish">Not</span> !
+# Focussing On <span class="fish">Delivery</span>
+
+<br />
+<br />
 
 * Building hardware is <span class=fish>hard</span> enough
-* Building software is <span class=fish>hard</span> too !
-* Building your service is where you want to spend <span class="fish">your</span> time !
-* Still, today, your engineer need to do all of this things : compliance, security, update, platform optimization...
-* What if they could just work on their application like they do when working on a website ?
+* Building firmware and libraries is hard too!
+* Innovators want to focus on their <span class="fish">products</span>
+<br />
+
+* Your team needs the tools to be productive
 
 ---
 
-# New <span class="fish">infrastructure</span> !
+# Open <span class="fish">infrastructure</span>
+
+<br />
 
 * Linux
 * Connectivity (Wireless, Bluetooth, 3/4G, ...)
+* Peer to peer communication infrastructure
 * User interface toolkit
 * Device management API
-* High level language (Javascript) with easy to get extentions !
-* Peer to peer communication infrastructure !
+* High level, extensible programming language
 
 ---
 
-# <span class="fish">NIH</span>, no  !
+# Effortless <span class="fish">Distribution</span>
 
----
+<br />
 
-# Linux <span class="fish">Distribution</span>
-
-* Pick one, optimize it !
-* IoT today, are the computer of yesterday !
-* Require a bit of qemu porting
-* Pick upstream open source project that are performance driven !
-* Move to a robust firmware update mecanism
+* A proven platform with established standards
+* Development tooling and simulation exists
+* Package management is well understood
+* Transparent update of firmware and platform
 * Fast release cycle
 
 ---
 
-# Connectivity<span class="fish"> !</span>
+# <span class="fish">NIH</span>? Great!
 
-* Provide daemon to manage all of them
-* Provide API for application to manipulate them
+---
+
+# <span class="fish">Standard</span> Connectivity
+
+<br />
+
+* Provided daemon manages all channels
+* APIs for application to utilise them easily
 * Internet access built in
 * Discoverability built in
-* Peer2Peer built in
+* Peer to peer built in
+* PubSub, Queues and WebSocket supported
 
 ---
 
-# User <span class="fish">interface</span> toolkit
+# <span class="fish">User Interface</span> Toolkit
+
+<br />
+<br />
 
 * Desktop class
-* Customizable to your needs !
-* Touch, internationalization support
-* Fast and light for IoT constrains
+* Customizable to your needs
+* Touch, internationalisation support
+* Fast and light for IoT constraints
 
 ---
 
-# Device <span class="fish">management</span>
+# <span class="fish">Device</span> Management
+
+<br />
 
 * Robust firmware update
 * Independent application update
@@ -121,7 +133,9 @@ Cheap ? No so fast !
 
 ---
 
-# High level <span class="fish">language</span> !
+# <span class="fish">High Level</span> Language
+
+<br />
 
 * Javascript
 * Compatible with all node.js JavaScript package
@@ -131,7 +145,10 @@ Cheap ? No so fast !
 
 ---
 
-# Peer to <span class="fish">peer</span> native
+# <span class="fish">Peer to Peer</span> Native
+
+<br />
+<br />
 
 * Scalability
 * Robustness
@@ -140,11 +157,16 @@ Cheap ? No so fast !
 
 ---
 
-# Longer <span class="fish">term</span>
+# Into the <span class="fish">Future</span>
 
-* Provide proper financial incentive via blockchain to every contributor of the stack.
-* White brand application store for use case where screen can host multiple applications.
-* Automated testing of applications before updating firmware.
+<br />
+<br />
+
+* Financial (crypto) incentive to every contributor
+* Application store for multiple app devices
+* Automated testing of applications
+  * Before application updates
+  * Compatibility checks for firmware updates
 
 ---
 
