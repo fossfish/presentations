@@ -1,0 +1,154 @@
+Fyne GUIs with Go
+Building a Modern Application Toolkit
+18 Jul 2018
+
+Andrew Williams
+Founder, FossFish
+andy@fossfi.sh
+https://fossfi.sh/
+@ajwillia_ms
+
+: Thanks for the opportunity to speak about something a little different!
+: Not a typo :)
+
+* Background
+
+.image maven.png _ 246
+.image headsup.png _ 246
+.caption Lots of Java
+
+.image projects.png 256 _
+
+.caption Lots and lots of C
+
+: Developer productivity - tools (listed), or teams & processes
+: Returned to Enlightenment & EFL. Hard to get into, maybe better tooling.
+: Life beyond E16
+: Edi: Editor to Productivity
+
+* 
+
+.background thesign.jpg
+
+: Developing GUIs with C is hard. And tedious. Strings, Threads, Function grouping
+: EFL 2.0, Eo bindings. Edi skeletons. Elementary widgets.
+: AND SO: Create API for devs to quickly build beautiful, user friendly, lightweight applications across multiple platforms.
+
+* The Fyne Toolkit
+
+- Quality by design
+- Usability built in
+- Look great anywhere
+: Fonts and icons. Windows, macOS & Linux
+- Easy to develop
+: break free of desktop app writing drudgery, spark joy in developers
+- Beyond just the GUI
+: Desktop integrations like standard workflows, notifications, app handoff
+
+[[http://fyne.io]]
+
+[[https://godoc.org/github.com/fyne-io/fyne]]
+
+: Lots more info online, but let me give you a taste:
+
+* Hello World!
+
+    package main
+
+    import "github.com/fyne-io/fyne/desktop"
+    import "github.com/fyne-io/fyne/widget"
+
+    func main() {
+    	app := desktop.NewApp()
+
+    	w := app.NewWindow("Hello")
+    	w.SetContent(widget.NewList(
+    		widget.NewLabel("Hello Fyne!"),
+    		widget.NewButton("Quit", func() {
+    			app.Quit()
+    		})))
+
+    	w.Show()
+    }
+
+.image hello-dark.png
+
+: packages: domain, canvas, widget, (desktop)
+: lightweight widgets = fully unit testable, no need to render (test driver)
+: thread safe - render, updates and events happens behind the scenes
+: Pure Go API, OS and native complexities hidden
+
+: It's that simple :) Default = spacig, font, material colours. But there's more!
+
+* Hello Big World!
+
+    # export FYNE_SCALE=4
+    # export FYNE_THEME=light
+
+.image hello-light-big.png
+
+: Vector based, floating point scale factor - adapts to screen
+: Dark or light - embedded resources adapt to theme change (dev helpers)
+
+* Examples
+
+.image examples.png _ 550
+
+: Async, threading, Primary action
+: Evolves as features and widgets are added
+
+* Roadmap
+
+- Basic cross-platform UI toolkit
+  - More widgets (scroll, dialogs, menus etc)
+  - More canvas primitives (circle, formatted text)
+  - More icons (standard actions, file types etc)
+  - Set up an IDE with Fyne support
+
+: High level overview of current - IDE is Edi or GoLand (JetBrains)
+
+- Full featured application framework
+  - High level layouts and workflows
+  - Web service integrations
+  - Multimedia embedding
+  - Integrating with platforms
+
+: Full is for rich, complex apps & integrations not just great GUIs
+
+- Desktop environment ...
+
+: Future = material design meets window manager - or sooner?
+
+[[https://github.com/fyne-io/fyne/wiki/Roadmap]]
+
+* Your Beautiful New Open Source Desktop
+
+- Experimental fyne project
+- Material design and usability
+- Modern features in minimal design
+- Linux, Wayland base (+Xwayland?)
+
+: Modern tech for something that is a Joy to use and develop for
+
+* 
+
+.background fynedesk_dark.png
+
+: Screenshot taken in the windowed "dev" mode, hence the strange widget sizes
+: No window management yet, but adding wayland support imminently
+
+* 
+
+.background fynedesk_light.png
+
+: And of course it comes in light too :)
+
+* Get Involved
+
+- [[http://fyne.io]]
+- [[https://github.com/fyne-io]]
+- Gopher Slack [[https://gophers.slack.com/app_redirect?channel=fyne][#fyne]]
+
+.background contribute.jpg
+
+: We are looking for developers, testers, designers and anyone excited to shape the future of desktop software ;)
